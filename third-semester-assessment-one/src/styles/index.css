@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer components {
+  /* Shared post card */
+  .post-card {
+    @apply block rounded-lg border border-slate-200 p-5 shadow-sm hover:shadow-md transition-all duration-200 hover:border-indigo-300 hover:bg-slate-50;
+  }
+
+  .post-card-title {
+    @apply text-lg font-semibold text-slate-900 mb-2;
+  }
+
+  /* Shared status badge */
+  .status-badge {
+    @apply inline-block mt-2 px-2.5 py-0.5 rounded text-xs font-medium;
+  }
+
+  .status-badge-published {
+    @apply bg-green-100 text-green-700;
+  }
+
+  .status-badge-draft {
+    @apply bg-yellow-100 text-yellow-700;
+  }
+
+  .status-badge-archived {
+    @apply bg-gray-100 text-gray-700;
+  }
+
+  /* Shared form controls */
+  .form-label {
+    @apply block text-sm font-medium mb-1 text-slate-900;
+  }
+
+  .form-input {
+    @apply w-full border rounded p-2 text-slate-900 focus:outline-none focus:ring-2 focus:ring-indigo-500;
+  }
+
+  .form-select {
+    @apply w-full border rounded p-2 text-slate-900 focus:outline-none focus:ring-2 focus:ring-indigo-500;
+  }
+
+  .btn-primary {
+    @apply w-full bg-indigo-600 text-white rounded py-2 px-4 hover:bg-indigo-700 disabled:opacity-50 transition-colors;
+  }
+
+  /* Shared error / empty states */
+  .error-banner {
+    @apply rounded-lg border border-red-200 bg-red-50 p-5 text-red-800 text-sm;
+  }
+
+  .empty-state {
+    @apply text-center py-8 text-slate-500;
+  }
+}
